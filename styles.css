@@ -87,14 +87,83 @@ nav ul li a.highlight {
 }
 
 main {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-program {
+    background-color: #272a31;
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.main-program h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.main-program h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+}
+
+.program-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+}
+
+.program-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.program-item:hover {
+    border: 1px solid #fff;
+}
+
+.program-item i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+.program-item h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.program-item p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.see-program {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 #hero {
     text-align: left;
-    padding: 4rem 0;
+    padding: 16px 120px;
 }
 
 #hero h1 {
